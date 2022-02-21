@@ -115,7 +115,7 @@ namespace Starwars
             //Lambda solution
             IEnumerable<Planet> planets_duplicate = Planets;
             IEnumerable<Planet> result = Planets.Except(planets_duplicate, new PlanetComparer());
-            //Man kune bare have brugt en simpelt Where som nedstående.
+            //Man kune bare have brugt en simpelt Where clause som nedstående.
             //IEnumerable<Planet> result = Planets.Where(x => x.RotationPeriod > 0);
             Printresult(11, result);
         }
